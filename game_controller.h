@@ -17,7 +17,6 @@ public:
     explicit game_controller(game_model& model, game_view& view);
     void launch();
 
-
 private:
     game_model& model;
     game_view& view;

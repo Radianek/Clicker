@@ -20,8 +20,16 @@ void game_view::update_title() {
 void game_view::update_points(int get_points) {
     cout << "\n\t\t\t\tPoints: " << get_points<<endl;
 }
-
 void game_view::update_level(int level) {
     cout << "\n\t\t\t\tLevel: " <<level <<endl;
-
 }
+void game_view::motivation1() {
+    cout<<"\n\t\t\tIt's not over until i win!!!!";
+}
+void game_view::motivation2() {
+    cout<<"\n\t\t\tKeep going, it's near the end!!!!";
+}
+void game_view::end_game() {
+    cout<<"\n\t\t\tCongratulations, you have reached 10 level!!!!";
+}
+

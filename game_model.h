@@ -11,9 +11,10 @@ class game_model {
 public:
     int get_points();
     int get_level();
+    int get_p_click();
     void add_points(int p);
     void update_level();
-
+    void motivation();
 private:
     int points = 0;
     int points_per_click=1;
