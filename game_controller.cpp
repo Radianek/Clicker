@@ -11,6 +11,9 @@ game_controller::game_controller(game_model& model, game_view& view) : model(mod
 
 void game_controller::launch()
 {
+    this->view.update_title();
+    this->view.update_points(model.get_points());
+    this->view.update_level(model.get_points());
     int key;
     do
     {
@@ -18,7 +21,9 @@ void game_controller::launch()
         if (key == 13)
         {
             this->model.add_points( 1);
-            this->view.update(model.get_points());
+            this->view.update_title();
+            this->view.update_points(model.get_points());
+            this->view.update_level(model.get_points());
 
         }
     }

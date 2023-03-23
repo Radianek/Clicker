@@ -9,8 +9,19 @@ using namespace std;
 
 
 
-void game_view::update(int points) {
+void game_view::update_title() {
     system("cls");
-    cout << "Concsole clicker!" <<endl;
-    cout << "Points: " << points<<endl;
+    cout << "_______________________________________________________________________________________________________";
+    cout << "\n\n\t\t\t\tCONSOL CLICKER\n";
+    cout << "_______________________________________________________________________________________________________\n";
+}
+
+void game_view::update_points(int get_points) {
+    cout << "\n\t\t\t\tPoints: " << get_points<<endl;
+}
+
+void game_view::update_level(int points) {
+    int level;
+    cout << "\n\t\t\t\tLevel: " <<level <<endl;
+
 }

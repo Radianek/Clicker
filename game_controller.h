@@ -15,7 +15,6 @@ class game_controller {
 
 public:
     explicit game_controller(game_model& model, game_view& view);
-
     void launch();
 
 
