@@ -5,7 +5,7 @@
 #include "game_model.h"
 
 int game_model::get_points() {
-    return this->points;
+    return points;
 }
 
 void game_model::add_points(int p) {

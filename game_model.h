@@ -13,7 +13,7 @@ public:
     void add_points(int p);
 
 private:
-    int points;
+    int points = 0;
 };
 
 
