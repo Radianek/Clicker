@@ -3,11 +3,32 @@
 //
 
 #include "game_model.h"
+#include <iostream>
+#include <cmath>
 
 int game_model::get_points() {
     return points;
 }
+int game_model::get_level() {
+    return current_level;
+}
+
 
 void game_model::add_points(int p) {
     this->points += p;
 }
+
+void game_model::update_level (){
+    int points_per_click;
+    this->points_needed = 10 * pow(2, current_level);
+    if(this->points >= this->points_needed){
+        this->current_level++;
+        this->points_per_click+=2;
+    }
+}
+
+
+
+/*
+    za każdy level pogratulować - view
+}*/

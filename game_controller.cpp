@@ -13,7 +13,7 @@ void game_controller::launch()
 {
     this->view.update_title();
     this->view.update_points(model.get_points());
-    this->view.update_level(model.get_points());
+    this->view.update_level(model.get_level());
     int key;
     do
     {
@@ -23,8 +23,8 @@ void game_controller::launch()
             this->model.add_points( 1);
             this->view.update_title();
             this->view.update_points(model.get_points());
-            this->view.update_level(model.get_points());
-
+            this->model.update_level();
+            this->view.update_level(model.get_level());
         }
     }
     while (key != 27);

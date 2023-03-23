@@ -24,4 +24,3 @@ private:
 };
 
 #endif
-//zrobic osobna klase która bedzie pobierac points

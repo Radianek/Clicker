@@ -11,7 +11,7 @@ class game_view {
 public:
     void update_title();
     void update_points(int get_points);
-    void update_level(int points);
+    void update_level(int level);
 
 private:
     game_model model;
